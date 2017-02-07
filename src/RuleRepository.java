@@ -3,9 +3,23 @@
  */
 public class RuleRepository {
 
+    public Question addQuestion(String id, Question question){
+        return question;
+    }
+
+    public Iterator getIterator() {
+        return Iterator;
+    }
+
 
     class QestionIterator{
 
+        public boolean hasNext() {
+            return false;
+        }
 
+        public Object next() {
+            return Object;
+        }
     }
 }
