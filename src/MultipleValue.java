@@ -5,10 +5,12 @@ public class MultipleValue extends Value{
 
     String param;
     String[] inputPattern;
+    boolean bool;
 
-    public MultipleValue(String param) {
+    public MultipleValue(String param, boolean bool) {
         this.param = param;
         this.inputPattern = param.split(",");
+        this.bool = bool;
     }
 
     public String[] getInputPattern() {
