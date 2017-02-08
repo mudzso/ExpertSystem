@@ -4,12 +4,14 @@
 public class MultipleValue extends Value{
 
     String param;
+    String[] inputPattern;
 
     public MultipleValue(String param) {
         this.param = param;
+        this.inputPattern = param.split(",");
     }
 
     public String[] getInputPattern() {
-        return null;
+        return inputPattern;
     }
 }
