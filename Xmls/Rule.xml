@@ -1,0 +1,84 @@
+<Rules>
+    <Rule id="motivation">
+        <Question>
+            “Would you like to be a CodeCooler?"
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="parents">
+        <Question>
+            “Did your parents send you here?”
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="timing">
+        <Question>
+            "Do you understand the timing ant time required to finish the course?"
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="iqtest">
+        <Question>
+            "Go to www.mensa.hu and fill out the logic test. Fill in the value with the gained IQ number."
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="fun">
+        <Question>
+            "Do you like to have fun?"
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    <Rule id="transparency">
+        <Question>
+            "You farted a silent but rotten smelling one. The team is looking for the person to crucify him. Would you tell the others that it was you?"
+        </Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+</Rules>
+
+
+
+
