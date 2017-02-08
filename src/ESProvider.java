@@ -3,8 +3,12 @@
  */
 public class ESProvider {
 
-    public ESProvider(FactParser factParser, RuleParser ruleParser) {
+    FactParser factParser;
+    RuleParser ruleParser;
 
+    public ESProvider(FactParser factParser, RuleParser ruleParser) {
+        this.factParser = factParser;
+        this.ruleParser = ruleParser;
     }
 
     public void collectAnswers() {
@@ -12,10 +16,10 @@ public class ESProvider {
     }
 
     public boolean getAnswerByQuestion(String questionID) {
-
+        return false;
     }
 
     public String evaluate() {
-
+        return "";
     }
 }
