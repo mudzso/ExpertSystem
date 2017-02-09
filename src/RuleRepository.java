@@ -21,12 +21,20 @@ public class RuleRepository {
 
     class QestionIterator{
 
+        int index = 0;
+
+
         public boolean hasNext() {
-            return false;
+
+            return index < questions.size();
         }
 
         public Object next() {
-            return null;
+
+            Question result = questions.get(index);
+            index++;
+            return result;
+
         }
     }
 }
