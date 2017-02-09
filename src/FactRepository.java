@@ -1,37 +1,20 @@
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
+
 /**
  * Created by Mudzso on 2017.02.07..
  */
 public class FactRepository {
 
     private Iterator iterator;
-    private Map<String,Fact> facts = new LinkedHashMap<>();
+    Map<String,Fact> facts;
+    List<Fact> listFact;
 
     public FactRepository() {
-
-        class FactIterator implements Iterator {
-
-            int index = 0;
-
-
-            public boolean hasNext() {
-
-                return index < facts.size();
-            }
-
-            public Object next() {
-
-                Fact result = facts.get(index);
-                index++;
-                return result;
-            }
-        }
+        this.facts = new HashMap<>();
         this.iterator = new FactIterator();
     }
 
     public Iterator getIterator() {
-
         return iterator;
     }
 
@@ -41,5 +24,28 @@ public class FactRepository {
     }
 
 
+    class FactIterator implements Iterator {
+
+
+
+
+        int index = 0;
+
+
+        public boolean hasNext() {
+            return index < listFact.size();
+        }
+
+        public Fact next() {
+            List<Fact>listFact = new ArrayList<>(facts.values());
+
+            if(hasNext()) {
+                Fact fact =  listFact.get(index);
+                index++;
+                return fact;
+            }
+            return null;
+        }
+    }
 
 }

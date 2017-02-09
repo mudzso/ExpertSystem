@@ -2,7 +2,7 @@
     <xs:element name="KM">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="Fact">
+                <xs:element name="Fact" maxOccurs="unbounded" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="Description">

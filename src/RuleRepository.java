@@ -21,7 +21,7 @@ public class RuleRepository {
                 return index < questions.size();
             }
 
-            public Object next() {
+            public Question next() {
 
                 Question result = questions.get(index);
                 index++;

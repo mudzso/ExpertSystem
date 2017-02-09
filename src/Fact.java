@@ -7,11 +7,10 @@ import java.util.Set;
  */
 public class Fact {
 
-    String description;
-    Map<String,Boolean> evals;
+    private String description;
+    private Map<String,Boolean> evals;
 
     Fact(String description) {
-
         this.description = description;
         this.evals = new HashMap<String,Boolean>();
     }
