@@ -1,18 +1,41 @@
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Mudzso on 2017.02.07..
  */
 public class RuleRepository {
 
+    private Iterator iterator;
+
+    private Map<String, Question> questions = new LinkedHashMap<>();
+
+    public RuleRepository() {
+
+        class QuestionIterator implements Iterator {
+
+            int index = 0;
 
 
-    private Map<String,Question> questions = new LinkedHashMap<>();
+            public boolean hasNext() {
 
-    public Question addQuestion(String id, Question question){
+                return index < questions.size();
+            }
 
-        questions.put(id,question);
+            public Object next() {
+
+                Question result = questions.get(index);
+                index++;
+                return result;
+
+            }
+        }
+        this.iterator = new QuestionIterator();
+    }
+
+
+    public Question addQuestion(String id, Question question) {
+
+        questions.put(id, question);
         return question;
     }
 
@@ -21,29 +44,12 @@ public class RuleRepository {
     }
 
     public Iterator getIterator() {
-        return null;
+        return iterator;
     }
-
-
-    class QestionIterator{
-
-        int index = 0;
-
-
-        public boolean hasNext() {
-
-            return index < questions.size();
-        }
-
-        public Object next() {
-
-            Question result = questions.get(index);
-            index++;
-            return result;
-
-        }
-    }
-
-
 }
+
+
+
+
+
 
