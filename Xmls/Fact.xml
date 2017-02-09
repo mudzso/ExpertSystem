@@ -25,4 +25,186 @@
             </Eval>
         </Evals>
     </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                false
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                false
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                false
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                false
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                false
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                false
+            </Eval>
+            <Eval id="transparency">
+                true
+            </Eval>
+        </Evals>
+    </Fact>
+    <Fact id="Bad Codecool material.">
+        <Description value="Future Codecooler failed on one of the important tests."/>
+        <Evals>
+            <Eval id="motivation">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="timing">
+                true
+            </Eval>
+            <Eval id="parents">
+                true
+            </Eval>
+            <Eval id="iqtest">
+                true
+            </Eval>
+            <Eval id="fun">
+                true
+            </Eval>
+            <Eval id="transparency">
+                false
+            </Eval>
+        </Evals>
+    </Fact>
 </KM>
