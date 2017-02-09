@@ -7,13 +7,14 @@ import java.util.Map;
  */
 public class Answer {
 
-    Map<Boolean, Value> values;
+    private Map<Boolean, Value> values;
 
     public Answer() {
         this.values = new HashMap<Boolean, Value>();
     }
 
     public boolean evaluateAnswerByInput(String input) {
+        int a;
         for(Map.Entry<Boolean, Value> entry : values.entrySet()) {
             if(Arrays.asList(entry.getValue().getInputPattern()).contains(input)) return true;
         }
@@ -26,5 +27,9 @@ public class Answer {
         }else {
             values.put(false, value);
         }
+    }
+
+    public Map<Boolean, Value> getValues() {
+        return values;
     }
 }

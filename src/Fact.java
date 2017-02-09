@@ -15,7 +15,7 @@ public class Fact {
     }
 
     public Set<String> getIDSet() {
-        return Set<String>;
+        return null;
     }
 
     public boolean getValueByID() {
