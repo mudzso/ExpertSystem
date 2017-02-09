@@ -1,7 +1,12 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
 /**
  * Created by Mudzso on 2017.02.07..
  */
 public class FactRepository {
+
+    private Map<String,Question> facts = new LinkedHashMap<>();
+
     public Iterator getIterator() {
         return null;
     }
@@ -11,14 +16,21 @@ public class FactRepository {
     }
 
 
-    class FactIterator{
+    class FactIterator {
+
+        int index = 0;
+
 
         public boolean hasNext() {
-            return false;
+
+            return index < facts.size();
         }
 
         public Object next() {
-            return null;
+
+            Question result = facts.get(index);
+            index++;
+            return result;
         }
     }
 }
