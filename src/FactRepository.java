@@ -29,7 +29,7 @@ public class FactRepository {
         }
         this.iterator = new FactIterator();
     }
-    
+
     public Iterator getIterator() {
 
         return iterator;
