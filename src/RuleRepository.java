@@ -6,12 +6,18 @@ import java.util.Map;
  */
 public class RuleRepository {
 
+
+
     private Map<String,Question> questions = new LinkedHashMap<>();
 
     public Question addQuestion(String id, Question question){
 
         questions.put(id,question);
         return question;
+    }
+
+    public Map<String, Question> getQuestions() {
+        return questions;
     }
 
     public Iterator getIterator() {
@@ -29,5 +35,7 @@ public class RuleRepository {
             return null;
         }
     }
+
+
 }
 

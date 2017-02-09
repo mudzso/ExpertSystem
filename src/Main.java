@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-       XmlParser xmlParser = new XmlParser();
-       System.out.println(xmlParser.validateXml(
-               "/home/Mudzso/Java/ExpertSystem/Xmls/Fact.xml",
-               "/home/Mudzso/Java/ExpertSystem/Xmls/facts.xsd"
-       )
-       );
+
+        RuleParser xmlParser = new RuleParser();
+        RuleRepository rule = xmlParser.getRuleRepository();
+        System.out.println(rule.getQuestions().get("fun").answer.getValues().get(true).getInputPattern()[0]);
+
+
 
     }
 }

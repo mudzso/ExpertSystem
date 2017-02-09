@@ -18,7 +18,7 @@ public class Question {
     }
 
     public void setAnswerEvaluater(Answer answer) {
-            this.answer = new Answer();
+            this.answer = answer;
     }
 
     public boolean getEvaluatedAnswer(String input) {

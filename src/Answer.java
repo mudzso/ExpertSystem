@@ -30,6 +30,7 @@ public class Answer {
     }
 
     public Map<Boolean, Value> getValues() {
+
         return values;
     }
 }
