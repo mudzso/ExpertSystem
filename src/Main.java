@@ -16,7 +16,7 @@ public class Main {
         FactRepository fact = factParser.getFactRepository();
 
         System.out.println(fact.facts.values().size());
-        System.out.println(fact.getIterator().next());
+
 
 
     }
