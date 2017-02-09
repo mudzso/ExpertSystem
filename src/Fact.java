@@ -12,7 +12,7 @@ public class Fact {
 
     Fact(String description) {
         this.description = description;
-        this.evals = new HashMap<String,Boolean>();
+        this.evals = new HashMap<>();
     }
 
     public void setFactValueByID(String id, boolean value) {
@@ -34,5 +34,9 @@ public class Fact {
 
     public String getDescription() {
         return description;
+    }
+
+    public Map<String, Boolean> getEvals() {
+        return evals;
     }
 }

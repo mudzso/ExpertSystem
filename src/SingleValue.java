@@ -8,7 +8,7 @@ public class SingleValue extends Value{
 
     public SingleValue(String param, boolean bool) {
         this.param = param;
-        this.inputPattern = this.inputPattern = param.split(",");
+        this.inputPattern = param.split(",");
         this.bool = bool;
     }
 

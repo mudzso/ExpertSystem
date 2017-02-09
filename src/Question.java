@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Objects;
 
@@ -22,15 +23,13 @@ public class Question {
     }
 
     public boolean getEvaluatedAnswer(String input) {
-        boolean result = false;
-        if(answer.evaluateAnswerByInput(input)){
             for (Map.Entry<Boolean, Value> entry : answer.getValues().entrySet()) {
-                if (Objects.equals(input, entry.getValue())) {
-                    result = entry.getKey();
+                if (Arrays.asList(entry.getValue().getInputPattern()).contains(input)) {
+                    return entry.getValue().getBool();
                 }
             }
 
-        }
-        return result;
+        return false;
     }
+
 }

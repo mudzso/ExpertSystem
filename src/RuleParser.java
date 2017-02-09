@@ -48,7 +48,9 @@ public class RuleParser extends XmlParser {
                     if(e.getElementsByTagName("MultipleValue").getLength() != 0){
                         falseValue = e.getElementsByTagName("MultipleValue").item(0).getAttributes()
                                 .getNamedItem("value").getNodeValue();
-                        isMulti = true;
+
+
+
 
 
 

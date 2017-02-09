@@ -10,6 +10,7 @@ public class Answer {
     private Map<Boolean, Value> values;
 
     public Answer() {
+
         this.values = new HashMap<Boolean, Value>();
     }
 

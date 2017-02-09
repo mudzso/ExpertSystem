@@ -5,7 +5,6 @@ public class MultipleValue extends Value{
 
     String param;
     String[] inputPattern;
-    boolean bool;
 
     public MultipleValue(String param, boolean bool) {
         this.param = param;

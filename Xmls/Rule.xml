@@ -18,10 +18,10 @@
         </Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="yes"/>
+                <SingleValue value="no"/>
             </Selection>
             <Selection value="false">
-                <SingleValue value="no"/>
+                <SingleValue value="yes"/>
             </Selection>
         </Answer>
     </Rule>
