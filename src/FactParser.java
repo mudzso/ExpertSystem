@@ -4,6 +4,6 @@
 public class FactParser extends XmlParser{
 
     public FactRepository getFactRepository() {
-        return FactRepository;
+        return null;
     }
 }

@@ -5,6 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ESProvider expertSystem = new ESProvider();
+       XmlParser xmlParser = new XmlParser();
+       System.out.println(xmlParser.validateXml("/home/Mudzso/Java/ExpertSystem/Xmls/Fact.xml","/home/Mudzso/Java/ExpertSystem/Xmls/facts.xsd"));
     }
 }

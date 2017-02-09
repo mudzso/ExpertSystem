@@ -8,7 +8,7 @@ public class RuleRepository {
     }
 
     public Iterator getIterator() {
-        return Iterator;
+        return null;
     }
 
 
@@ -19,7 +19,7 @@ public class RuleRepository {
         }
 
         public Object next() {
-            return Object;
+            return null;
         }
     }
 }

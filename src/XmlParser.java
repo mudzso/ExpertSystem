@@ -34,6 +34,7 @@ public class XmlParser {
 
         }
         catch(Exception e){
+            e.printStackTrace();
             return false;
 
         }
