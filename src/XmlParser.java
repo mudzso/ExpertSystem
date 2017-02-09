@@ -16,6 +16,8 @@ import java.io.InputStream;
  */
 public class XmlParser {
 
+    Document doc;
+
     public boolean validateXml(String fullpathXml,String fullpathXsd){
 
         try
@@ -38,11 +40,14 @@ public class XmlParser {
     }
 
     public void  loadXmlDocument(String fullpath){
+
         try{
         File input = new File(fullpath);
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-        Document doc = documentBuilder.parse(input);
+        doc = documentBuilder.parse(input);
+        doc.getDocumentElement().normalize();
+
         }catch (Exception e){
             e.printStackTrace();
         }
