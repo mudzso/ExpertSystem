@@ -9,29 +9,6 @@ public class RuleRepository {
 
     private Map<String, Question> questions = new LinkedHashMap<>();
 
-    public RuleRepository() {
-
-        class QuestionIterator implements Iterator {
-
-            int index = 0;
-
-
-            public boolean hasNext() {
-
-                return index < questions.size();
-            }
-
-            public Question next() {
-
-                Question result = questions.get(index);
-                index++;
-                return result;
-
-            }
-        }
-        this.iterator = new QuestionIterator();
-    }
-
 
     public Question addQuestion(String id, Question question) {
 
@@ -44,9 +21,28 @@ public class RuleRepository {
     }
 
     public Iterator getIterator() {
-        return iterator;
+        return new QuestionIterator();
+    }
+    class QuestionIterator implements Iterator {
+        java.util.Iterator it;
+
+        public QuestionIterator() {
+            super();
+            this.it = questions.values().iterator();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return it.hasNext();
+        }
+
+        @Override
+        public Object next() {
+            return it.next();
+        }
     }
 }
+
 
 
 

@@ -33,7 +33,7 @@ public class FactParser extends XmlParser{
                     if(mNode.getNodeType() == Node.ELEMENT_NODE){
                         Element eval = (Element)mNode;
                         String evalId = eval.getAttribute("id");
-                        value = Boolean.parseBoolean(eval.getTextContent());
+                        value = Boolean.parseBoolean(eval.getTextContent().trim());
 
                         fact.setFactValueByID(evalId,value);
                     }

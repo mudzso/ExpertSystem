@@ -11,11 +11,10 @@ public class FactRepository {
 
     public FactRepository() {
         this.facts = new HashMap<>();
-        this.iterator = new FactIterator();
     }
 
     public Iterator getIterator() {
-        return iterator;
+        return new FactIterator();
     }
 
     public void addFact(String id,Fact fact) {
@@ -26,10 +25,25 @@ public class FactRepository {
 
     class FactIterator implements Iterator {
 
+        java.util.Iterator it;
+        public FactIterator() {
+
+            super();
+            this.it = facts.values().iterator();
+        }
+
+        @Override
+        public boolean hasNext() {
+            return it.hasNext();
+        }
+
+        @Override
+        public Object next() {
+            return it.next();
+        }
 
 
-
-        int index = 0;
+        /*int index = 0;
 
 
         public boolean hasNext() {
@@ -45,7 +59,7 @@ public class FactRepository {
                 return fact;
             }
             return null;
-        }
+        }*/
     }
 
 }

@@ -49,10 +49,29 @@ public class ESProvider {
 
     public String evaluate() {
 
-        if(!(answers.contains(false))){
-                return "Good codecool material";
-            };
-        return "Bad coodecool material";
+        Iterator it = fact.getIterator();
+        int i = 0;
+        boolean found = false;
+        while(it.hasNext()){
+
+            Fact fact = (Fact)it.next();
+            for (String s:fact.getIDSet()) {
+                if(fact.getValueByID(s) != answers.get(i++)){
+                    found = false;
+                    break;
+                }else {
+                    found = true;
+                }
+
+
+            }
+            i = 0;
+            if(found){
+            return fact.getDescription();
+            }
+
+        }
+        return "Fact not found";
     }
 
 
